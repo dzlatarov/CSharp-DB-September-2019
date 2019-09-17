@@ -1,12 +1,18 @@
 CREATE TABLE Minions
 (
-	Id INT PRIMARY KEY,
+	Id INT,
 	[Name] NVARCHAR (50) NOT NULL,
-	Age INT
+	Age INT,
+
+	CONSTRAINT PK_Minions
+	PRIMARY KEY (Id)
 )
 
 CREATE TABLE Towns
 (
-	Id INT PRIMARY KEY,
-	[Name] NVARCHAR (50)
+	Id INT,
+	[Name] NVARCHAR (50),
+
+	CONSTRAINT PK_Towns
+	PRIMARY KEY (Id)
 )
