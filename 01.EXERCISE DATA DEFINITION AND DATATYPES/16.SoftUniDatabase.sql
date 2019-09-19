@@ -52,23 +52,3 @@ CREATE TABLE Employees(
 	FOREIGN KEY (AddressId)
 	REFERENCES Addresses(Id)
 )
-
-INSERT INTO Towns (Name)
-	VALUES ('Sofia'),
-		   ('Plovdiv'),
-		   ('Varna')
-
-INSERT INTO Addresses (AddressText, TownId)
-	VALUES ('Kanarche 43', 2),
-		   ('Hristo Botev', 3),
-		   ('Ivan Vazov', 1)
-
-INSERT INTO Departments (Name)
-	VALUES ('CEO'),
-		   ('Technical'),
-		   ('Support')
-
-INSERT INTO Employees (FirstName, MiddleName, LastName, JobTitle, DepartmentId, HireDate, Salary, AddressId)
-	VALUES ('Ivan', 'Ivanov', 'Ivanov', 'Cleaner', 3, '2019-05-10', 1500, 1),
-		   ('Gergana', 'Petrova', 'Ivanova', 'Trainer ', 2, '2018-10-01', 1000, 2),
-		   ('Petar', 'Petrov', 'Shopov', 'Manager', 1, '2016-05-01', 2500, 3) 
