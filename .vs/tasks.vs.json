@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-Class1",
+      "appliesTo": "Entity Framework Core - October 2019/01.DB APPS Exercise/01.Initial Setup/Class1.cs",
+      "type": "launch"
+    }
+  ]
+}
