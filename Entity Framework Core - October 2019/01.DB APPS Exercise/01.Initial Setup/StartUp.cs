@@ -10,25 +10,25 @@
                 connection.Open();
 
 
-                //string[] createTables =
-                //{
-                //    "CREATE TABLE Countries(Id INT PRIMARY KEY IDENTITY, Name NVARCHAR(50))",
+                string[] createTables =
+                {
+                    "CREATE TABLE Countries(Id INT PRIMARY KEY IDENTITY, Name NVARCHAR(50))",
 
-                //    "CREATE TABLE Towns(Id INT PRIMARY KEY IDENTITY, Name NVARCHAR(50), CountryCode INT FOREIGN KEY REFERENCES Countries (Id))",
+                    "CREATE TABLE Towns(Id INT PRIMARY KEY IDENTITY, Name NVARCHAR(50), CountryCode INT FOREIGN KEY REFERENCES Countries (Id))",
 
-                //    "CREATE TABLE Minions(Id INT PRIMARY KEY IDENTITY, Name NVARCHAR(50), Age INT, TownId INT FOREIGN KEY REFERENCES Towns(Id))",
+                    "CREATE TABLE Minions(Id INT PRIMARY KEY IDENTITY, Name NVARCHAR(50), Age INT, TownId INT FOREIGN KEY REFERENCES Towns(Id))",
 
-                //    "CREATE TABLE EvilnessFactors(Id INT PRIMARY KEY IDENTITY, Name NVARCHAR(50))",
+                    "CREATE TABLE EvilnessFactors(Id INT PRIMARY KEY IDENTITY, Name NVARCHAR(50))",
 
-                //    "CREATE TABLE Villains(Id INT PRIMARY KEY IDENTITY, Name NVARCHAR(50), EvilnessFactorId INT FOREIGN KEY REFERENCES EvilnessFactors(Id))",
+                    "CREATE TABLE Villains(Id INT PRIMARY KEY IDENTITY, Name NVARCHAR(50), EvilnessFactorId INT FOREIGN KEY REFERENCES EvilnessFactors(Id))",
 
-                //    "CREATE TABLE MinionsVillains(MinionId INT FOREIGN KEY REFERENCES Minions(Id), VillainId INT FOREIGN KEY REFERENCES Villains(Id), CONSTRAINT PK_MinionsVillains PRIMARY KEY (MinionId, VillainId))"
-                //};
+                    "CREATE TABLE MinionsVillains(MinionId INT FOREIGN KEY REFERENCES Minions(Id), VillainId INT FOREIGN KEY REFERENCES Villains(Id), CONSTRAINT PK_MinionsVillains PRIMARY KEY (MinionId, VillainId))"
+                };
 
-                //foreach (var table in createTables)
-                //{
-                //    Executer(table, connection);
-                //}
+                foreach (var table in createTables)
+                {
+                    Executer(table, connection);
+                }
 
                 string[] insertData =
                 {
